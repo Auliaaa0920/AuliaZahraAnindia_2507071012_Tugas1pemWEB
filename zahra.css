@@ -688,3 +688,40 @@ footer {
         border-radius: 15px;
     }
 }
+
+
+.floating-music {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 999;
+    animation: floating 3s ease-in-out infinite;
+}
+.music-cloud {
+    background: #fff0f7;
+    border: 2px solid #cfe5ff;
+    border-radius: 50px;
+    padding: 18px 25px;
+    box-shadow: 0 5px 15px #d9c8e5;
+    text-align: center;
+    color: #a27ba8;
+}
+.music-cloud button {
+    border: none;
+    background: #d9eaff;
+    color: #9275a8;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}

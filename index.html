@@ -228,6 +228,32 @@
 
 </div>
 
+<div class="floating-music">
+    <div class="music-cloud">
+        <span>♫ A little melody</span>
+
+        <audio id="myMusic" src="Lagu1.mpeg"></audio>
+
+        <button onclick="toggleMusic()" id="musicBtn">
+            ▶
+        </button>
+    </div>
+</div>
+
+<script>
+function toggleMusic() {
+    const music = document.getElementById("myMusic");
+    const btn = document.getElementById("musicBtn");
+
+    if (music.paused) {
+        music.play();
+        btn.textContent = "Ⅱ";
+    } else {
+        music.pause();
+        btn.textContent = "▶";
+    }
+}
+</script>
 
 </body>
 </html>
